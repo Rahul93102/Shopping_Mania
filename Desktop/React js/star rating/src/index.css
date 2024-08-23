@@ -1,0 +1,15 @@
+.active {
+  color: #fff700;
+}
+
+.inactive {
+  color: #000000;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(223, 33, 154);
+  height: 100vh;
+}

@@ -1,0 +1,25 @@
+.loader {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  padding: 15px;
+  border-radius: 5px;
+  border: 0.5px solid goldenrod;
+}
+
+.product img {
+  height: 200px;
+  width: 200px;
+}

@@ -1,0 +1,62 @@
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  margin: auto;
+}
+
+.sliders {
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  color: #fff;
+  filter: drop-shadow(0px 0px 5px #555);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.left-slider {
+  left: 1rem;
+}
+
+.right-slider {
+  right: 1rem;
+}
+
+.current-slider {
+  display: block;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 7px #666;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.non-current-slider {
+  display: none;
+}
+
+.circle-indicators {
+  position: absolute;
+  bottom: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.circle-indicators button {
+  height: 0.75rem;
+  width: 0.75rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.current-swipper {
+  background-color: aquamarine;
+}
+
+.non-current-swipper {
+  background-color: rgb(217, 217, 44);
+}

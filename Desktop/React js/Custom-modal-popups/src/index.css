@@ -1,0 +1,113 @@
+body,
+html {
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex; /* Changed from 'fixed' to 'flex' for proper layout */
+  align-items: center;
+  justify-content: center;
+  position: fixed; /* Replaced 'display: fixed' with 'position: fixed' */
+  z-index: 1;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: lightblue;
+}
+
+.buttons {
+  background-color: orange;
+  font-size: large;
+  border-radius: 5px;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons:hover {
+  background-color: rgb(199, 199, 199);
+}
+/* Modal Background */
+.main-container {
+  position: fixed;
+  z-index: 10; /* Increased z-index for better layering */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal Content */
+.sub-container {
+  position: relative;
+  background-color: #fff; /* White background for the content */
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners for a modern look */
+  width: 70%; /* Reduced width for a more balanced layout */
+  max-width: 600px; /* Ensures modal doesn’t get too large */
+  animation-name: animateModal;
+  animation-duration: 0.5s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+/* Close Button */
+.close-modal-icon {
+  cursor: pointer;
+  font-size: 30px; /* Slightly reduced size */
+  position: absolute;
+  top: 10px;
+  right: 20px; /* Positioned within the modal content */
+  color: #333; /* Darker color for better contrast */
+}
+
+/* Modal Header */
+.headers {
+  padding: 15px 20px; /* Increased padding for breathing room */
+  background-color: #28a745; /* Slightly darker green */
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 1.2em; /* Slightly larger text */
+}
+
+/* Modal Body */
+.tittles {
+  padding: 20px; /* Even padding for consistency */
+  font-size: 1em;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Modal Footer */
+.footer {
+  background-color: #28a745;
+  color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: right; /* Align buttons to the right */
+}
+
+/* Animation for Modal */
+@keyframes animateModal {
+  from {
+    transform: translateY(-50px); /* Slide in from above */
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
