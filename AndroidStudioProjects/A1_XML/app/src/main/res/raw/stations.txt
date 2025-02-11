@@ -1,0 +1,21 @@
+New York, Yes, 500, 06:30
+London, No, 1500, 12:00
+Paris, Yes, 300, 02:30
+Dubai, Yes, 1000, 08:45
+Tokyo, No, 2500, 15:00
+New York, Yes, 500, 06:30
+London, No, 1500, 12:00
+Paris, Yes, 300, 02:30
+Dubai, Yes, 1000, 08:45
+Tokyo, No, 2500, 15:00
+New York, Yes, 500, 06:30
+London, No, 1500, 12:00
+Paris, Yes, 300, 02:30
+Dubai, Yes, 1000, 08:45
+Tokyo, No, 2500, 15:00
+New York, Yes, 500, 06:30
+London, No, 1500, 12:00
+Paris, Yes, 300, 02:30
+Dubai, Yes, 1000, 08:45
+Tokyo, No, 2500, 15:00
+

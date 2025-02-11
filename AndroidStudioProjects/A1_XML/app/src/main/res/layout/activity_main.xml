@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Total Distance Traveled -->
+    <TextView
+        android:id="@+id/tv_total_distance_traveled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Distance Traveled: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Total Distance Remaining -->
+    <TextView
+        android:id="@+id/tv_total_distance_remaining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Distance Remaining: "
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Progress Text -->
+    <TextView
+        android:id="@+id/tv_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Progress: "
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Buttons Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btn_toggle_unit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Switch to Miles"
+            android:textColor="@android:color/white"
+            style="?android:attr/buttonStyle"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btn_next_stop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Next Stop"
+            android:textColor="@android:color/white"
+            style="?android:attr/buttonStyle" />
+    </LinearLayout>
+
+    <!-- Switch for Lazy View -->
+    <Switch
+        android:id="@+id/switch_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch to Lazy View"
+        android:checked="false"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- ListView for Stops -->
+    <ListView
+        android:id="@+id/listView_stops"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="15dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:background="@color/light_blue"
+        android:textColor="@android:color/white"
+        android:padding="8dp" />
+
+
+    <!-- ComposeView for Jetpack Compose -->
+    <androidx.compose.ui.platform.ComposeView
+        android:id="@+id/compose_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+</LinearLayout>
